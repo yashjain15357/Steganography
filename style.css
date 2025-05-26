@@ -34,7 +34,7 @@ body {
 .container:hover {
   box-shadow: 0 15px 35px rgba(0, 255, 255, 0.4), 0 0 20px rgba(0, 255, 255, 0.3);
   transform: scale(1.02);
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgb(255, 255, 255);
   backdrop-filter: blur(4px);
 }
 .container p,
@@ -97,7 +97,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 20px 40px;
+  padding: 20px 30px;
   height: 100%;
   text-align: center;
 }
@@ -231,36 +231,36 @@ body {
   transform: translateX(200%);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+  body,
+  .container,
+  .container p,
+  .container li,
+  .container a,
+  .container span,
+  .container button {
+    font-size: calc(100% - 2px);
+  }
+
   .container {
-    flex-direction: column;
-    width: 100%;
-    min-height: auto;
+    min-height: calc(500px + 50px); /* increase container height by 50px */
   }
 
-  .form-container,
-  .toggle-container {
-    position: static;
-    width: 100%;
-    height: auto;
-    transform: none !important;
-    border-radius: 0;
+  .form-container {
+    height: calc(100% + 100px); /* increase form height by 50px */
   }
 
-  .toggle {
-    width: 100%;
-    flex-direction: column;
-  }
+  
 
   .toggle-panel {
-    position: static;
-    width: 100%;
-    height: auto;
-    padding: 20px;
+    height: calc(100% + 100px);
   }
+}
 
-  .container.active .toggle,
-  .container.active .form-container {
-    transform: none;
+@media (max-width: 600px) {
+  .container form {
+    height: 80%;   /* reduce height */
+    width: 110%;   /* increase width */
+    margin: 10px auto;  /* adds vertical margin of 10px and centers horizontally */
   }
 }
