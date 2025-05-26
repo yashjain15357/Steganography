@@ -161,6 +161,8 @@ a:hover {
 
 /* Very Small Screens */
 @media (max-width: 480px) {
+    
+
     h1 {
         font-size: 1.3em;
     }
