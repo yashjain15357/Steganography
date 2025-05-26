@@ -44,8 +44,8 @@ body {
 h1 {
     font-size: 2.2em;
     margin-bottom: 20px;
-    color: #00ffff;
-    text-shadow: 0 0 5px #00ffff, 0 0 15px #00ffff, 0 0 25px #007fff;
+    color: #0f160f;
+    text-shadow: 0 0 5px #00ffff, 0 0 15px #00ffff;
     animation: glowText 3s ease-in-out infinite alternate;
 }
 
